@@ -1,13 +1,14 @@
-
 # Description:
-#   Utility commands surrounding Hubot uptime.
+#   Hello Hubot.
 #
 # Commands:
-#   hubot ping - Reply with pong
-#   hubot echo <text> - Reply back with <text>
-#   hubot time - Reply with current time
-#   hubot die - End hubot process
+#   hubot hello <text>- Reply Hello <text>
+#   hubot hello <text>- Reply Hello <text>
 
 module.exports = (robot) ->
   robot.respond /hello (.+)/i, (msg) ->
     msg.send "Hello #{msg.match[1]}"
+
+module.exports = (robot) ->
+  robot.hear /ぬるぽ/i, (msg) ->
+    msg.send "ガッ！"
